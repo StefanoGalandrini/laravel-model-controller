@@ -16,7 +16,6 @@ class PageController extends Controller
     public function movies()
     {
         $moviesArray = Movie::all();
-        dd($moviesArray);
         return view('movies', ['movies' => $moviesArray]);
     }
 }
