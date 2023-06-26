@@ -1,5 +1,8 @@
 @extends('layouts.base')
 
 @section('contents')
-    <h2>HOME</h2>
+    <div class="home-container">
+        <h2 class="title">Laravel Database</h2>
+        <p class="description">Visita il catalogo nella sezione <a href="movies">"Film"</a> per sfogliare il catalogo</p>
+    </div>
 @endsection

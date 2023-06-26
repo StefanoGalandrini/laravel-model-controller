@@ -1,9 +1,19 @@
 @use "partials/header";
+@use "partials/home";
+@use "partials/movies";
 
 @import "~bootstrap/scss/bootstrap";
 
 body {
     background-image: url("../img/bkg.jpg");
     background-repeat: repeat;
-    background-size: contain;
+    // background-size: contain;
+    min-height: 100vh;
+}
+
+main {
+    min-height: 90vh;
+    width: 70vw;
+    margin-inline: auto;
+    overflow-y: auto;
 }
