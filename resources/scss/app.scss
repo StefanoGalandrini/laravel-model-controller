@@ -1,9 +1,9 @@
-@import "~bootstrap/scss/bootstrap";
+@use "partials/header";
 
-h1 {
-    color: red;
-}
+@import "~bootstrap/scss/bootstrap";
 
 body {
     background-image: url("../img/bkg.jpg");
+    background-repeat: repeat;
+    background-size: contain;
 }
