@@ -1,6 +1,6 @@
 nav {
     background-color: #444444;
-    height: 10vh;
+    height: 7vh;
     padding: 0 20rem;
     display: flex;
     justify-content: space-between;
@@ -10,6 +10,7 @@ nav {
     h1 {
         color: rgb(94, 0, 0);
         font-weight: bold;
+        font-size: 2rem;
     }
 
     ul {
@@ -22,6 +23,11 @@ nav {
             color: white;
             text-decoration: none;
             font-size: 1.5rem;
+            transition: all 250ms;
+
+            &:hover {
+                color: brown;
+            }
         }
     }
 }

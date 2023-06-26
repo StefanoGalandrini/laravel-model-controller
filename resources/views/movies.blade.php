@@ -5,12 +5,30 @@
     <div class="movies-container">
         @foreach ($movies as $movie)
             <div class="movie-card">
-                <p>ID: {{ $movie->id }}</p>
-                <p>Title: {{ $movie->title }}</p>
-                <p>Original Title: {{ $movie->original_title }}</p>
-                <p>Nationality: {{ $movie->nationality }}</p>
-                <p>Date: {{ $movie->date }}</p>
-                <p>Vote: {{ $movie->vote }}</p>
+                <p class="movie-info">
+                    <span class="info-label">ID: </span>
+                    <span class="info-value">{{ $movie->id }}</span>
+                </p>
+                <p class="movie-info">
+                    <span class="info-label block-el">Title: </span>
+                    <span class="info-value">{{ $movie->title }}</span>
+                </p>
+                <p class="movie-info">
+                    <span class="info-label block-el">Original Title: </span>
+                    <span class="info-value">{{ $movie->original_title }}</span>
+                </p>
+                <p class="movie-info">
+                    <span class="info-label">Nationality: </span>
+                    <span class="info-value">{{ $movie->nationality }}</span>
+                </p>
+                <p class="movie-info">
+                    <span class="info-label">Date: </span>
+                    <span class="info-value">{{ $movie->date }}</span>
+                </p>
+                <p class="movie-info">
+                    <span class="info-label">Vote: </span>
+                    <span class="info-value">{{ $movie->vote }}</span>
+                </p>
             </div>
         @endforeach
     </div>
